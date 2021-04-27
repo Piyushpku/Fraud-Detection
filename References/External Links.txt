@@ -1,0 +1,3 @@
+https://spark.apache.org/docs/latest/quick-start.html
+http://cassandra.apache.org/doc/latest/
+https://www.kaggle.com/mlg-ulb/creditcardfraud 

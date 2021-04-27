@@ -1,0 +1,73 @@
+\documentclass{vldb}
+\usepackage{graphicx}
+\usepackage{balance}
+
+\vldbTitle{Prototype design for a Credit Card Fraud Detection System using Apache Spark}
+\vldbAuthors{Apoorv Semwal,Ekjoth Singh,Hartaj Singh Waraich,Piyush Kumar}
+\vldbDOI{xxxxxxx.xxxxxxx}
+\vldbVolume{xx}
+\vldbNumber{xxx}
+\vldbYear{xxxx}
+
+\begin{document}
+
+% ****************** TITLE ****************************************
+\title{Prototype design for a Credit Card Fraud Detection System using Apache Spark}
+
+% ****************** AUTHORS **************************************
+
+\numberofauthors{4}
+
+\author{
+\alignauthor
+Apoorv Semwal\\
+       \affaddr{Concordia University}\\
+       \affaddr{Montreal, Canada}\\
+       \email{a\_semwal@concordia.ca}
+% 2nd. author
+\alignauthor
+Ekjot Singh\\
+       \affaddr{Concordia University}\\
+       \affaddr{Montreal, Canada}\\
+       \email{ek\_singh@concordia.ca}
+% 3rd. author
+\alignauthor
+Hartaj Singh Waraich\\
+       \affaddr{Concordia University}\\
+       \affaddr{Montreal, Canada}\\
+       \email{har\_singh@concordia.ca}
+\and
+% 4th. author
+\alignauthor
+Piyush Kumar\\
+       \affaddr{Concordia University}\\
+       \affaddr{Montreal, Canada}\\
+       \email{pi\_kumar@concordia.ca}
+}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\keywords{\textbf{Fraud Detection,Credit Card, Distributed Platforms-Apache Spark, Apache Cassandra, Machine Learning}}
+
+\section{Introduction}
+\subsection{A}
+\subsection{B}
+\section{Related Work}
+A logical prerequisite, before actually start developing a solution to a problem, would be to understand the existing system where the problem has been identified. Paper [2] presents a comprehensive and a very lucid explanation for the various parties involved in a credit transaction and ways in which a fraudulent transaction takes place.\\\\
+Although a lot of research have already been put into detecting fraud credit card transactions but most of it has been focusing towards improving some specific Machine Learning Models or the Algorithms being used for detection. Some significant ML approaches employed in Credit Card Fraud Detection have thoroughly been discussed in paper [3] which proposes SVM with RBF Kernel as an effective classification model and [6] which presents a comparative study for various possible models being used.\\\\
+In-fact as part of our proposed solution we would be selecting one of these ML Models which offers better predictions on our test data.
+As mentioned in the introduction handling of the highly imbalanced data set would be one of the concerns for our solution
+which has been explained in paper [4].\\\\
+However our focus within this paper would not be on improving the accuracy of some Machine Learning model instead
+we would be focusing more on how to harness the distributed data processing capabilities offered by platforms like
+Apache Spark and Cassandra for building an end to end working solution.\\\\
+With the kind of Big Data Volumes being generated today we all know how expensive it is to train ML Models in terms of resource requirements like multi core CPUs/GPUs, physical memory and persistent storage. Apache Spark being one of the most widely used open source distributed data processing framework operating on a Master-Slave architecture allows processing data sets in parallel using multiple worker nodes. Paper [1] provides a fair overview of how distributed processing in Apache Saprk tries to overcome these resource limitations while doing data intensive analytics.\\\\
+Paper [5] and [7] further try to delve into the specific techniques used for Credit Card Fraud Detection but with their focus on Apache Spark as an implementation platform.\\\\
+The proposed solution in this paper primarily tries to capture details from a variety of references mentioned here and come up with a working implementation of a Credit Card Fraud Detection System keeping in mind the distributed nature of execution for effective resource utilization.\\
+\section{Progress so far}
+\section{References}
+\end{document}
